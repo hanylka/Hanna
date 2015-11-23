@@ -32,9 +32,9 @@ namespace Task1
             this.color = color;
         }
 
-        public String write(String word)
+        public String Write(String word)
         {
-            if (!isWork())
+            if (!IsWork())
             {
                 return "";
             }
@@ -50,25 +50,20 @@ namespace Task1
         }
 
         // ERROR!!! Bug
-        public String getColor()
+        public String GetColor()
         {
             return "BLUE";
         }
 
-        public Boolean isWork()
+        public Boolean IsWork()
         {
             return inkContainerValue > 0;
         }
 
-        public void doSomethingElse()
+        public void DoSomethingElse()
         {
             Console.WriteLine(color);
         }
-        public void printValue()
-        {
-            Console.WriteLine(inkContainerValue);
-        }
-
     }
 }
 
