@@ -41,7 +41,7 @@ namespace Task1
             double sizeOfWord = word.Length * sizeLetter;
             if (sizeOfWord <= inkContainerValue)
             {
-                inkContainerValue -= sizeOfWord;
+                inkContainerValue -= (int)Math.Ceiling(sizeOfWord);
                 return word;
             }
             String partOfWord = word.Substring(0, inkContainerValue);
@@ -64,6 +64,11 @@ namespace Task1
         {
             Console.WriteLine(color);
         }
+        public void printValue()
+        {
+            Console.WriteLine(inkContainerValue);
+        }
+
     }
 }
 

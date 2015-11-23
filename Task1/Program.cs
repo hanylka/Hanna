@@ -10,6 +10,11 @@ namespace Task1
     {
         static void Main(string[] args)
         {
+            Pen pen = new Pen(10, 1.1);
+            pen.printValue();
+            Console.WriteLine(pen.write("1234567890"));
+            pen.printValue();
+            Console.ReadLine();
         }
     }
 }
